@@ -1,0 +1,501 @@
+body {
+	background:#ccc;
+	margin:20px;
+	min-width:660px;
+}
+
+#siteContainer {
+	max-width:1920px;
+	margin:auto;
+	background:#fff;
+}
+
+/* global override classes */
+.topElement{margin-top:0!important;}
+.bottomElement{margin-bottom:0!important;}
+section{padding:10px}
+
+/* common elements */
+header {
+	width:100%;
+    height:110px;
+	margin:10px 0;
+	color:white;
+    font-family: 'Libre Baskerville', serif;    text-align: center;
+    font-size:clamp(50px, 4vw, 70px);
+    line-height:110px;}
+
+/* contents */
+#contents {
+    width:calc(100%-20px); 
+	max-width: 1980px;
+	height:100vh;
+	max-height: 1080px;
+}
+#contentsImage {
+    width:75%;
+	height:calc(100% - 2px);
+	float:left;
+	background:url('img/header.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#contentsImage h1 {
+	color:white;
+    margin: 10px;
+	height: 19%;
+    font-family: 'Libre Baskerville', serif;   
+    letter-spacing: -8px;	
+	text-align: center;
+    font-size:clamp(300px, 14vw, 900px);
+    line-height:400px;
+}
+
+#contents nav {
+	float:right;
+	height:100vh;
+	width:25%;
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:column
+}
+
+.contentsButton{
+    color:white;
+    margin:10px;
+	height: 18%;
+    font-family: 'Libre Baskerville', serif;    text-align: center;
+    font-size:clamp(10px, 2vw, 50px);
+    line-height:100px!important;
+	cursor: pointer;
+}
+
+.contents0 {
+	background:#843c54;
+	background-image: url("img/navbtn0.png");
+	background-size: cover;
+}
+
+.contents1 {
+	background:#e59d38;
+	background-image: url("img/navbtn1.png");
+	background-size: cover;
+}
+
+.contents2 {
+	background:#d02f47;
+	background-image: url("img/navbtn2.png");
+	background-size: cover;
+}
+.contents3 {
+	background:#1e3559;
+	background-image: url("img/navbtn3.png");
+	background-size: cover;
+}
+
+.contents4 {
+	background:#0f1117;
+	background-image: url("img/navbtn4.png");
+	background-size: cover;
+	font-size: clamp(10px, 1.9vw, 50px);
+}
+
+/* story so far */
+#storySoFar header {
+	background:#843c54;
+}
+
+#storySoFarText {
+	column-count:2;
+	font-size:15pt;
+	padding:10px;
+}
+
+/* cast */
+#cast {
+	position:relative;
+	padding-bottom:0;
+}
+
+.expanded {
+	padding-bottom:810px!important;
+}
+
+#cast header {
+	background:#e59d38;
+}
+
+#castButtonsContainer {
+	width:100%;
+    display:flex;
+    flex-wrap:wrap; 
+	justify-content:space-between;
+	background:white;
+	position:relative;
+	z-index:2;
+}
+
+.castButton{
+    width:calc(25% - 10px);
+	padding-top:calc(25% - 10px);
+    background:url(placeholder.png) center no-repeat;
+    background-size:contain;
+	margin:5px 0;
+    overflow:hidden;
+	position:relative;
+	cursor: pointer;}
+
+.castButton > div {
+	width:calc(100% - 10px);
+	background:#2C2727;
+	color:white;
+    position:absolute;
+	bottom:0;
+	text-align:center;
+    font-size:clamp(10px, 1.8vw, 32pt);
+	padding:5px;
+    font-family: 'Libre Baskerville', serif;}
+
+#castInformationContainer {
+    height:800px;
+	background:#2D2828;
+    position:absolute;
+	margin:5px 10px;
+	display:flex;
+	bottom:0px;
+	left:0;
+	right:0;
+	z-index:1;
+	opacity:0; 
+}
+
+.castVisible{
+    opacity:1!important;
+}
+
+#castInformationCloser {
+	position:absolute;
+	top:5px;
+	right:10px;
+	font-size:30px;
+	color:white;
+	font-family:arial;
+}
+
+
+#castShowcaseImage {
+    height:100%; 
+	width:clamp(200px, 22vw, 390px);
+    border-right:10px white solid;
+	position:relative;
+    background-size:cover!important;
+}
+
+#castTextContainer {
+    background:#2D2828;
+	width:calc(100% - 110px);
+	height:calc(100% - 40px);
+	padding:20px 60px;
+}
+
+#castCharactername {
+    font-size:clamp(25px, 6vw, 85px);
+    height:100px;
+	line-height: 100px;
+	color:white;
+	font-family: 'Mate SC', serif;
+	border-bottom:2px white solid;
+}
+
+#castCharacterBasics {
+    height:60px;
+	display:flex;
+	justify-content: space-between;
+}
+
+#castCharacterBasics > div {
+    font-size:clamp(10px, 3.5vw, 35px); 
+	color:white;
+	font-family: 'Mate SC', serif;
+	line-height:60px;
+}
+
+#castCharacterTextContainer {
+    display:flex;
+	height:600px;
+	margin:0px, 70px;
+}
+
+#castCharacterStatsheet {
+	width:150px;
+    border:2px white solid;
+    height:280px;
+	padding:10px;
+	font-size:15px;
+	display: flex;
+	justify-content: center;
+}
+	
+#castcharacterStatsheet > div {
+	font-size:28pt;
+    color:white;
+    font-family: 'Libre Baskerville', serif;}
+
+#castCharacterStatsheet > div:nth-child(1) {
+	float:left;
+}
+
+#castCharacterStatsheet > div:nth-child(2) {
+	float:right;
+	text-align: center;
+}
+
+#castCharacterExtended {
+	width:calc(100% - 170px);
+    margin-left:20px;
+    overflow-y: auto;
+	font-size:24px;
+	color:white;
+	font-family: 'Mate SC', serif;
+}
+
+/* world */
+#world header {
+	background:#d02f47
+}
+
+#worldButtonsContainer {
+	display:flex;
+}
+
+.worldButton {
+    width:33%;
+    height:350px;
+    background:#d02f47;
+    font-size:clamp(10px, 4vw, 64pt);
+	padding:5px;
+    font-family: 'Libre Baskerville', serif;    text-align:center;
+	line-height:150px;
+	color:white;
+    text-decoration: none;
+}
+
+.world0 {
+	background-image: url("img/worldbtn0.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.world1 {
+	margin:0 10px;
+	background-image: url("img/worldbtn1.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.world2 {
+	background-image: url("img/worldbtn2.png");
+	background-size: cover;
+	background-position: center;
+}
+
+/* quest board */
+#questBoard header {
+	background:#1e3559
+}
+
+#questBoardContainer {
+	background:#eaeaea;
+	position:relative;
+	height:600px;
+	overflow:hidden;
+}
+
+.questNote {
+    width:600px;
+	background:#1e3559;
+    padding:20px 80px 60px 20px;
+	color:white;
+	font-size:24px;
+    font-family: 'Libre Baskerville', serif;    position:absolute;
+    outline:6px solid white;
+    clip-path: polygon(calc(100% + 6px) -6px, calc(100% + 6px) calc(100% - 81px), calc(100% - 56px) calc(100% + 6px), -6px calc(100% + 6px), -6px -6px);user-select: none;cursor:move;
+}
+
+.questNote:before {
+    content:'';
+	position:absolute;
+	bottom:-5px;
+	right:-5px;
+    height:85px;
+	width:60px;
+	border:5px white solid;
+}
+
+.questNote:after {
+    content:''; 
+	width: 0;
+	height: 0;
+    border-style: solid; 
+	border-width: 0 0 85px 60px;
+    border-color: transparent transparent #ffffff transparent;
+    position:absolute;
+	bottom:-1px;
+	right:-1px;
+}
+
+.noteHeader {
+    font-size:32px;
+    padding-bottom:5px;
+}
+
+.noteHeader:after {
+    display:block;
+    content:'';
+	width:100%;
+	height:20px;
+	background:white;
+	margin:5px 0;
+}
+
+.quest0 {
+	left:30px;
+	top:5%;
+	transform:rotate(-5deg);
+}
+
+
+/* roads yet untravelled */
+#roadsYetUntravelled header {
+	background:#0f1117;
+}
+
+#untravelledButtonsContainer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+	position:relative;
+}
+
+.untravelledButton {
+   position:relative;
+   z-index:1;
+   width:calc(20% - 5px);
+   height:500px;
+   background:#272727;
+   cursor:pointer;
+}
+
+.untravelledButton:after {
+   content:'';
+   width:100%;
+   height:100%;
+   position:absolute;
+   top:0;
+   left:0;
+   opacity:0;
+   transition:opacity 0.4s ease-in-out}
+
+.untravelledButton:hover:after{
+	opacity:1
+}
+
+.untravelled0 {
+	background-image:url('img/bossoutline1.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled0:after {
+	background-image:url('img/bossoutline1-active.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled1 {
+	background-image:url('img/bossoutline2.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled1:after {
+	background-image:url('img/bossoutline2-active.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled2 {
+	background-image:url('img/bossoutline0.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled2:after {
+	background-image:url('img/bossoutline0-active.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled3 {
+	background-image:url('img/bossoutline3.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled3:after {
+	background-image:url('img/bossoutline3-active.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled4 {
+	background-image:url('img/bossoutline4.png');
+	background-size:cover;
+	background-position:center middle;
+}
+
+.untravelled4:after {
+	background-image:url('img/bossoutline4-active.png');
+	background-size:cover;
+	background-position:center middle;
+}
+#untravelledCover {
+    width:100%;
+	height:100%;
+	background:rgba(25,25,25,0.7);
+    position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+    opacity:0;
+	transition:opacity 0.5s;
+	pointer-events: none;
+	cursor:pointer;
+}
+#untravelledText {
+    pointer-events: none;
+    padding:50px;
+    background:black;
+    width:50%;height:50%;margin:auto;
+    position:absolute;
+    left:0;
+	right:0;
+	top:0;
+	bottom:0;
+    color:white;
+	font-family: 'Mate SC', serif;
+    font-size:15pt;
+	text-align: center;
+}
+.untravelledTextActive {
+    opacity:1!important;
+	pointer-events: all!important;
+}
+
+/* mediaqueries */
+@media only screen and (max-width: 900px) {
+    #castShowcaseImage{width:0;}
+    #castTextContainer{padding:20px 20px;width:100%;}
+    #storySoFarText{column-count:1;}
+}
